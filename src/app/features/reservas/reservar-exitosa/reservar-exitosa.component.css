@@ -1,0 +1,66 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    border-radius: 10px;
+    border: none;
+    background-color: #f9f9f9;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    color: #009970;
+  }
+  
+  .alert-info {
+    background-color: #eafaf1;
+    border-color: #c3e6cb;
+  }
+  
+  .alert-heading {
+    color: #006c5f;
+  }
+  
+  ul.list-unstyled {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-primary {
+    background-color: #009970;
+    border-color: #009970;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #007d5e;
+  }
+  
+  .btn-outline-secondary {
+    border-color: #6c757d;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .bi-check-circle-fill {
+    font-size: 4rem;
+  }
+  
+  .text-muted {
+    color: #6c757d !important;
+  }
+  
+  .text-success {
+    color: #28a745 !important;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  

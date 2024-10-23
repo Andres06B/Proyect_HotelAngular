@@ -1,0 +1,45 @@
+<div class="container-fluid">
+    <h1 class="main-title">Acompañantes</h1>
+    <p class="description">Información sobre tus acompañantes durante la estancia.</p>
+  
+    <div class="companions-container">
+      <div class="companion-card" *ngFor="let companion of companions">
+        <div class="card-header">
+          <div class="icon-container">
+            <i class="companion-icon {{ companion.isAdult ? 'bi bi-person-fill' : 'bi bi-person-bounding-box' }}"></i>
+          </div>
+          <div class="companion-info">
+            <h2>{{ companion.name }}</h2>
+            <p>{{ companion.isAdult ? 'Adulto' : 'Niño' }}</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="age-info"><strong>Edad:</strong> {{ companion.age }} años</p>
+          <button class="btn btn-info" (click)="viewCompanionDetails(companion)">Ver Detalles</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Modal para detalles del acompañante -->
+    <div *ngIf="selectedCompanion" class="modal fade show d-block" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ selectedCompanion.name }}</h5>
+            <button type="button" class="close" (click)="closeCompanionDetails()" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p><strong>Edad:</strong> {{ selectedCompanion.age }} años</p>
+            <p><strong>Tipo:</strong> {{ selectedCompanion.isAdult ? 'Adulto' : 'Niño' }}</p>
+            <!-- Agrega aquí más detalles si es necesario -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="closeCompanionDetails()">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

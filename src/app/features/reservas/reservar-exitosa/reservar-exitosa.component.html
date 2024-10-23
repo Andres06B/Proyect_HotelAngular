@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="reservar-exitosa.component.css">
+<div class="container mt-5">
+  <div class="card shadow-lg p-4">
+    <!-- Icono de confirmación -->
+    <div class="text-center mb-4">
+      <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem;"></i>
+    </div>
+
+    <!-- Título y descripción -->
+    <h2 class="text-center mb-3">Factura de Reserva</h2>
+    <p class="text-center text-muted">
+      ¡Tu pago ha sido exitoso! Puedes descargar tu factura a continuación.
+    </p>
+
+    <!-- Detalles de la reserva -->
+    <div class="alert alert-info" role="alert">
+      <h5 class="alert-heading">Detalles de tu reserva</h5>
+      <ul class="list-unstyled mb-0">
+        <li><strong>Nombre del Huésped:</strong> Juan Pérez</li>
+        <li><strong>Nacionalidad:</strong> Colombiano</li>
+        <li><strong>Correo Electrónico:</strong> juan.perezexample.com</li>
+        <li><strong>Hotel:</strong> Iguana's House, Colombia</li>
+        <li><strong>Entrada:</strong> 8 Octubre 2024</li>
+        <li><strong>Salida:</strong> 9 Octubre 2024</li>
+        <li><strong>Noches:</strong> 1</li>
+        <li><strong>Ocupación:</strong> 2 Adultos</li>
+        <li><strong>Habitación:</strong> Tech Room</li>
+        <li><strong>Descripción de la Habitación:</strong> Habitación moderna equipada con tecnología de última generación, ideal para aquellos que buscan comodidad y funcionalidad. Cuenta con cama matrimonial, baño privado, aire acondicionado y WiFi gratuito.</li>
+        <li><strong>Régimen:</strong> Desayuno incluido</li>
+        <li><strong>Total:</strong> COP 747,498.50</li>
+      </ul>
+    </div>
+
+    <!-- Botones de acciones -->
+    <div class="text-center mt-4">
+      <button class="btn btn-primary btn-lg me-3" (click)="generarFacturaPDF()">
+        <i class="bi bi-file-earmark-arrow-down"></i> Descargar Factura
+      </button>
+      <button class="btn btn-outline-secondary btn-lg" (click)="volverAlInicio()">
+        <i class="bi bi-house-door"></i> Volver al Inicio
+      </button>
+    </div>
+  </div>
+</div>

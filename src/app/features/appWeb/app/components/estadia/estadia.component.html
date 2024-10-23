@@ -1,0 +1,28 @@
+<div class="container-fluid my-stay">
+    <h1 class="main-title">Mi Estadía</h1>
+  
+    <div class="stay-details" *ngFor="let room of reservedRooms">
+      <div class="stay-header">
+        <div class="stay-icon">
+          <i class="bi bi-house-door-fill"></i>
+        </div>
+        <div class="stay-info">
+          <h2>{{ room.hotelName }} - {{ room.roomName }}</h2>
+        </div>
+      </div>
+  
+      <div class="stay-body">
+        <div class="stay-dates">
+          <p><i class="bi bi-calendar-check-fill"></i> <strong>Entrada:</strong> {{ room.checkInDate }}</p>
+          <p><i class="bi bi-calendar-x-fill"></i> <strong>Salida:</strong> {{ room.checkOutDate }}</p>
+          <p><i class="bi bi-moon-stars-fill"></i> <strong>Noches:</strong> {{ room.nights }}</p>
+        </div>
+        <div class="stay-occupancy">
+          <p><i class="bi bi-people-fill"></i> <strong>Ocupación:</strong> {{ room.occupancy }}</p>
+          <p><i class="bi bi-cone-striped"></i> <strong>Régimen:</strong> {{ room.regimen }}</p>
+          <p><i class="bi bi-gift-fill"></i> <strong>Ofertas:</strong> {{ room.offers }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

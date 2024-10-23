@@ -1,0 +1,42 @@
+<div class="container reserved-rooms">
+    <h1 class="main-title">Habitaciones Reservadas</h1>
+    <p class="description">Descubre nuestras exclusivas habitaciones, diseñadas para brindarte una experiencia inigualable en cada estancia.</p>
+  
+    <div class="room-cards">
+      <div class="room-card" *ngFor="let room of reservedRooms">
+        <div class="icon-wrapper">
+          <i class="{{ room.icon }}"></i>
+        </div>
+        <div class="room-info">
+          <h2 class="room-name">{{ room.name }}</h2>
+          <p class="room-description">{{ room.description }}</p>
+        </div>
+        <button class="btn btn-room-details" (click)="showDetails(room)">Ver Detalles</button>
+      </div>
+    </div>
+  
+    <!-- Modal to show room details -->
+    <div *ngIf="selectedRoom" class="modal fade show d-block" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ selectedRoom.name }}</h5>
+            <button type="button" class="close" (click)="selectedRoom = null" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>{{ selectedRoom.description }}</p>
+            <h6>Servicios Incluidos:</h6>
+            <ul>
+              <li *ngFor="let service of selectedRoom.services">{{ service }}</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" (click)="selectedRoom = null">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

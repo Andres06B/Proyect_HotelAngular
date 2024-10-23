@@ -1,0 +1,310 @@
+<link rel="stylesheet" href="habitaciones.component.css">
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="Imagen1.png" alt="Logo de Iguana's House"> New Iguanas's House
+        </a>
+        <div class="d-flex ms-auto align-items-center">
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">New Iguanas's House</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2" aria-current="page" routerLink="/Home">
+                            <i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2 active"  routerLink="/Habitaciones">
+                            <i class="bi bi-door-open"></i> Habitaciones
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2"  href="/Servicios">
+                            <i class="bi bi-calendar-minus-fill"></i> Servicios
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2"  href="/Reservas">
+                            <i class="bi bi-calendar-check"></i> Reservar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-lg-2"  href="/Nosotros">
+                            <i class="bi bi-people"></i> Nosotros
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <a href="/log-in" class="btn login-button me-2">
+            <i class="bi bi-box-arrow-in-right" style="color: #ffffff"></i> Log-In
+          </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+<section class="hero-section text-center">
+    <div class="container">
+    </div>
+</section>
+<section class="room-features">
+    <h2 class="section-title">Lo que encuentras en nuestras habitaciones</h2>
+    <div class="section-description">
+        Nuestras habitaciones, diseñadas para su comodidad, ofrecen impresionantes vistas a la ciudad y al mar. Cada habitación está equipada con una moderna televisión de pantalla plana, aire acondicionado, caja fuerte, amenidades exclusivas, agua caliente, secador de cabello, minibar y conexión WiFi de alta velocidad.
+    </div>
+    <div class="feature-container">
+        <div class="feature-item">
+            <i class="fas fa-wifi"></i> 
+            <h3>WiFi Gratis</h3>
+            <p>Conéctate a internet sin interrupciones.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-snowflake"></i> 
+            <h3>Aire Acondicionado</h3>
+            <p>Mantén la temperatura perfecta en tu habitación.</p>
+        </div>
+        <div class="feature-item">
+            <i class="fas fa-clock"></i> 
+            <h3>Atención 24/7</h3>
+            <p>Estamos aquí para ti en cualquier momento.</p>
+        </div>
+    </div>
+</section>
+<section class="py-5 text-center">
+    <div class="container">
+        <h4 class="text-uppercase">Nuestra sala de estar</h4>
+        <h1>El descanso más memorable comienza aquí.</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://cf2.bstatic.com/xdata/images/hotel/max1024x768/562574663.jpg?k=bbce5f9b1ca20d2bd0410fff8bf115fc856a3ae5b3ac85010423e9f3752b3db9&o=&hp=1" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Garabato
+                        </h5>
+                        <p class="card-text">
+                            Disfruta de la elegancia.Ideal para quienes buscan relajarse con estilo y comodidad.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $180.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.hotelmorenoviejo.com/wp-content/uploads/2014/11/sencilla.jpg" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Puya
+                        </h5>
+                        <p class="card-text">
+                            Un refugio que te permite desconectar y disfrutar de una experiencia única de descanso y confort.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $193.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/535159405.jpg?k=5bfb0b96ac9da280cff8137376d7d67f9851bcd35a1c468335f06343a9850a70&o=&hp=1" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Porro
+                        </h5>
+                        <p class="card-text">
+                            Esta habitación combina lujo y comodida para que tu estancia sea inolvidable.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $170.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://fridahotelunico.com/images/sencilla03.jpg" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Champeta
+                        </h5>
+                        <p class="card-text">
+                            Sumérgete en la tranquilidad, perfecta para relajarte y disfrutar de las mejores vistas.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $165.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://hoteloroverdesuitesiquitos.com/wp-content/uploads/2021/07/Simple-1-1-scaled.jpg" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Cumbia
+                        </h5>
+                        <p class="card-text">
+                            El equilibrio perfecto, esta habitación te ofrece una experiencia incomparable de descanso.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $155.000
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf1p930I2BaJzXYjlLy02hTZFvXhgicOOriQ&s" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Merecumbe
+                        </h5>
+                        <p class="card-text">
+                            Una suite diseñada para ofrecerte una experiencia de lujo.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $190.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://hotelcasablancagirardot.com/wp-content/plugins/vikbooking/site/resources/uploads/1dsc04585.jpg" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Fandango
+                        </h5>
+                        <p class="card-text">
+                            Descansa en esta lujosa suite. Ideal para quienes buscan una escapada tranquila y relajante.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $150.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.hotelcentralteziutlan.com/wp-content/uploads/2021/04/habitacion-sencilla-02.jpg" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Bullerengue
+                        </h5>
+                        <p class="card-text">
+                            Una suite acogedora, perfecta para quienes desean disfrutar de lujo y serenidad en un solo lugar.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $145.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://www.solcaribehotel.com/img/cama-doble-sencilla-1.jpg" class="card-img-top room-image" alt="Deluxe Ocean View">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-bed"></i> Mapalé
+                        </h5>
+                        <p class="card-text">
+                            Disfruta de una experiencia única,donde el lujo y la comodidad se encuentran en perfecta armonía.
+                        </p>
+                        <p class="card-text"><strong>Servicios:</strong> WiFi, TV, Mini Bar</p>
+                        <p class="card-text"><strong>Disponibilidad:</strong> Disponible todo el año</p>
+                        <p class="price">
+                            <i class="fas fa-tag"></i> Desde $175.000 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="check-in-section text-center py-5">
+    <div class="container">
+        <h2 class="section-title" style="color: #ffffff;">Haz tu Check-In y Check-Out</h2>
+        <p class="mb-4"style="color: #ffffff">Reserva tu habitación ahora y disfruta de una estancia inolvidable en New Iguana's House.
+        </p>
+        <a href="/Reservas" class="btn login-button">Reservar Habitación</a>
+    </div>
+</section>
+<section class="footer-section py-5 bg-dark text-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="Imagen1.png" alt="Logo de Iguana's House" height="40" class="me-2">
+                    <span class="fw-bold fs-4">NIH</span>
+                </a>
+                <p class="mt-3">Descubre un mundo de confort, lujo y aventura en Cartagena, donde cada momento es
+                    extraordinario. Reserva con nosotros y vive la experiencia.</p>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h5 class="text-uppercase mb-4">Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light footer-link">Destinos</a></li>
+                    <li><a href="#" class="text-light footer-link">Ofertas Especiales</a></li>
+                    <li><a href="#" class="text-light footer-link">Tipos de Habitaciones</a></li>
+                    <li><a href="#" class="text-light footer-link">Opiniones de Clientes</a></li>
+                    <li><a href="#" class="text-light footer-link">Guías de Viaje</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h5 class="text-uppercase mb-4">Nuestros Servicios</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light footer-link">Asistencia de Conserje</a></li>
+                    <li><a href="#" class="text-light footer-link">Opciones de Reserva Flexible</a></li>
+                    <li><a href="#" class="text-light footer-link">Traslados al Aeropuerto</a></li>
+                    <li><a href="#" class="text-light footer-link">Bienestar y Recreación</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-3">
+                <h5 class="text-uppercase mb-4">Contáctanos</h5>
+                <div class="social-icons">
+                    <a href="#" class="text-light me-2 footer-social">
+                        <i class="bi bi-facebook"></i> 
+                    </a>
+                    <a href="#" class="text-light me-2 footer-social">
+                        <i class="bi bi-instagram"></i> 
+                    </a>
+                    <a href="#" class="text-light me-2 footer-social">
+                        <i class="bi bi-youtube"></i> 
+                    </a>
+                    <a href="#" class="text-light me-2 footer-social">
+                        <i class="bi bi-twitter"></i> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p class="mb-0">&copy; 2024 New Iguana's House. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</section>

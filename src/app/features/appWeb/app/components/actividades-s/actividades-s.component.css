@@ -1,0 +1,192 @@
+/* Animación de entrada para la sección */
+.suggested-activities {
+    padding: 2rem;
+    background-color: #f8f9fa; /* Fondo suave */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Títulos y subtítulos con animación */
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #009970; /* Color del hotel */
+    text-align: center;
+    margin-bottom: 1rem;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animaciones en tarjetas */
+  .activity-card {
+    background-color: #fff;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border: none;
+    opacity: 0;
+    animation: cardPopUp 1.2s ease-in-out forwards;
+  }
+  
+  @keyframes cardPopUp {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animación para los íconos */
+  .activity-icon {
+    font-size: 3rem;
+    color: #009970; /* Color del hotel */
+    margin-bottom: 0.75rem;
+    animation: bounce 1.5s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* Transición suave en el botón */
+  .btn-primary {
+    background-color: #009970; /* Color del hotel */
+    border-color: #009970;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .btn-primary:hover {
+    background-color: #007a5a;
+    transform: scale(1.05);
+  }
+  
+  /* Ofertas */
+  .list-unstyled li {
+    font-size: 0.9rem;
+    color: #009970; /* Color del hotel */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .list-unstyled li:hover {
+    color: #007a5a; /* Color más oscuro en hover */
+  }
+  
+  .bi-tag-fill {
+    color: #ffa500; /* Color de oferta */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .bi-tag-fill:hover {
+    transform: rotate(20deg) scale(1.2);
+  }
+  
+  /* Modales */
+  .modal-header {
+    background-color: #009970; /* Color del hotel */
+    color: white;
+    border-bottom: none;
+    animation: fadeInModal 0.5s ease;
+  }
+  
+  @keyframes fadeInModal {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal-title {
+    font-size: 1.5rem;
+  }
+  
+  .btn-close {
+    color: white;
+  }
+  
+  /* Efecto de carga en el botón de reserva */
+  .spinner-border {
+    color: white;
+    animation: spin 0.7s linear infinite;
+  }
+  
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Confirmación de reserva */
+  .modal-header.confirmation {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .modal-footer .btn-primary.confirmation {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .modal-footer .btn-primary.confirmation:hover {
+    background-color: #218838;
+  }
+  
+  /* Animación para que las tarjetas aparezcan con retraso */
+  @keyframes staggeredFade {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .col-lg-4:nth-child(1) .activity-card {
+    animation: staggeredFade 0.5s 0.2s forwards;
+  }
+  
+  .col-lg-4:nth-child(2) .activity-card {
+    animation: staggeredFade 0.5s 0.4s forwards;
+  }
+  
+  .col-lg-4:nth-child(3) .activity-card {
+    animation: staggeredFade 0.5s 0.6s forwards;
+  }
+  

@@ -1,0 +1,71 @@
+<app-navbar></app-navbar>
+
+<!-- Contenedor principal para las secciones -->
+<div class="container-fluid">
+  <!-- Sección de bienvenida mejorada -->
+  <div *ngIf="seccionActual === 'bienvenida'" class="welcome-container">
+    <h1 class="main-title">¡Bienvenido a Tu Experiencia Inolvidable!</h1>
+    <p class="description">Descubre los servicios y actividades que harán de tu estadía un momento único y especial.</p>
+
+    <!-- Sección de características mejorada -->
+    <div class="features row justify-content-center">
+      
+      <!-- Tarjeta de habitaciones -->
+      <div class="feature col-md-3">
+        <div class="icon-container animate-icon">
+          <i class="fas fa-bed"></i>
+        </div>
+        <h2>Habitaciones</h2>
+        <p>Explora nuestras opciones de habitaciones confortables y personalizadas para ti.</p>
+      </div>
+
+      <!-- Tarjeta de acompañantes -->
+      <div class="feature col-md-3">
+        <div class="icon-container animate-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <h2>Acompañantes</h2>
+        <p>Invita a tus seres queridos y comparte la experiencia de tu viaje con ellos.</p>
+      </div>
+
+      <!-- Tarjeta de estadía -->
+      <div class="feature col-md-3">
+        <div class="icon-container animate-icon">
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <h2>Estadía</h2>
+        <p>Administra tu estancia y consulta tus planes fácilmente desde cualquier lugar.</p>
+      </div>
+
+      <!-- Tarjeta de actividades -->
+      <div class="feature col-md-3">
+        <div class="icon-container animate-icon">
+          <i class="fas fa-bicycle"></i>
+        </div>
+        <h2>Actividades</h2>
+        <p>Explora las actividades más emocionantes y haz que tu viaje sea inolvidable.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Secciones dinámicas de la aplicación -->
+  <div *ngIf="seccionActual === 'HabitacionesApp'">
+    <app-habitacione-sapp></app-habitacione-sapp>
+  </div>
+  
+  <div *ngIf="seccionActual === 'acompanantes'">
+    <app-acompanantes></app-acompanantes>
+  </div>
+  
+  <div *ngIf="seccionActual === 'estadia'">
+    <app-estadia></app-estadia>
+  </div>
+  
+  <div *ngIf="seccionActual === 'actividades'">
+    <app-actividades-s></app-actividades-s>
+  </div>
+</div>
+
+<!-- Footer siempre visible -->
+<app-footer-navbar (seccionCambiada)="cambiarSeccion($event)"></app-footer-navbar>
